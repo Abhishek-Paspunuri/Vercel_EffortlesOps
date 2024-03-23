@@ -81,7 +81,7 @@ const Checkpoint = (props) => {
     let handleDelete = async ()=>{
         try {
             console.log(id);
-            const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/checkpoints/deleteCheckpoint/${id.toString()}`, {
+            const response = await fetch(`https://effortlessops-backend.onrender.com/api/checkpoints/deleteCheckpoint/${id.toString()}`, {
               method: 'DELETE',
               headers: {
                 'Content-Type' : 'application/json',

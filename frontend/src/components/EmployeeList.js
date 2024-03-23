@@ -15,7 +15,7 @@ function SelfieApp() {
   const [users, setUsers] = useState([]);
     const getUsers = async () => {
         try {
-            const response = await fetch("https://vercel-effortles-ops.vercel.app/api/signup/getUsers", {
+            const response = await fetch("https://effortlessops-backend.onrender.com/api/signup/getUsers", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const SearchChat = ({handleSetCurrentChat}) => {
   const senderId=localStorage.getItem("emp_id");
 
   const fetchData = (value) => {
-    fetch("https://vercel-effortles-ops.vercel.app/api/employees/search")
+    fetch("https://effortlessops-backend.onrender.com/api/employees/search")
       .then((response) => response.json())
       .then((employeeIds) => {
         const filteredResults = employeeIds.filter((empId) => {

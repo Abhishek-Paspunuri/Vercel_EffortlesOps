@@ -184,7 +184,7 @@ const CalendarScheduler = (props) => {
   
   const fetchEvents = async () => {
     try {
-      const response = await fetch('https://vercel-effortles-ops.vercel.app/api/calendar/fetchEvents');
+      const response = await fetch('https://effortlessops-backend.onrender.com/api/calendar/fetchEvents');
       const data = await response.json();
   
       // Parse date strings to Date objects
@@ -216,7 +216,7 @@ const CalendarScheduler = (props) => {
 
   if (title && start && end) {
     try {
-      const response = await fetch('https://vercel-effortles-ops.vercel.app/api/calendar/putEvents', {
+      const response = await fetch('https://effortlessops-backend.onrender.com/api/calendar/putEvents', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -255,7 +255,7 @@ const CalendarScheduler = (props) => {
 
 const handleDelete = async (event) => {
   try {
-    const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/calendar/deleteEvent/${event._id.toString()}`, {
+    const response = await fetch(`https://effortlessops-backend.onrender.com/api/calendar/deleteEvent/${event._id.toString()}`, {
       method: 'DELETE',
     });
 

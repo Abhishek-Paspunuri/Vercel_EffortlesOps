@@ -35,7 +35,7 @@ function SelfieApp() {
   const [tasks, setTasks] = useState([]);
   const fetchTasks = async () => {
     try {
-      const response = await fetch('https://vercel-effortles-ops.vercel.app/api/tasks/fetchTasks');
+      const response = await fetch('https://effortlessops-backend.onrender.com/api/tasks/fetchTasks');
       const data = await response.json();
       setTasks(data);
     } 

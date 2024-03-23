@@ -13,7 +13,7 @@ const TrackUsers = () => {
   const getImages = async () => {
     try {
         console.log(location.state.emp_id);
-        const response = await fetch("https://vercel-effortles-ops.vercel.app/api/signup/getImage", {
+        const response = await fetch("https://effortlessops-backend.onrender.com/api/signup/getImage", {
             method: "GET",
             headers: {
             "Content-Type": "application/json",

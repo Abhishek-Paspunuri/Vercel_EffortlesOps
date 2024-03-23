@@ -10,7 +10,7 @@ const Conversation = ({ data, currentUser,online}) => {
         const getUserData = async ()=> {
           try {
             // console.log(userId);
-            const response = await fetch("https://vercel-effortles-ops.vercel.app/api/profile-data/getUser",{
+            const response = await fetch("https://effortlessops-backend.onrender.com/api/profile-data/getUser",{
                   method: "GET",
                   headers: {
                       "emp_id": userId,

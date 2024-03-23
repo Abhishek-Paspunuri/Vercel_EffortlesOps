@@ -9,7 +9,7 @@ function Statistics() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("https://vercel-effortles-ops.vercel.app/api/signup/getImage", {
+            const response = await fetch("https://effortlessops-backend.onrender.com/api/signup/getImage", {
                 method: "GET",
                 headers: {
                     "emp_id": "emp-details",

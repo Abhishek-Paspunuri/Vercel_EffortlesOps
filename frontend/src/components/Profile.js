@@ -23,7 +23,7 @@ const Profile = () => {
     let fetchData = async () => {
         try {
           const response = await fetch(
-            "https://vercel-effortles-ops.vercel.app/api/profile-data/getUser",{
+            "https://effortlessops-backend.onrender.com/api/profile-data/getUser",{
                 method: "GET",
                 headers: {
                     "emp_id": currentUser,
@@ -42,7 +42,7 @@ const Profile = () => {
     // Function to handle updating the left section data
     const updateLeftSection = async () => {
         try {
-            await axios.put(`https://vercel-effortles-ops.vercel.app/api/profile-data/updateLeftSection`, editedEmployee, {
+            await axios.put(`https://effortlessops-backend.onrender.com/api/profile-data/updateLeftSection`, editedEmployee, {
                 headers: { 
                     'emp_id': currentUser,
                     'object_id':editedEmployee._id
@@ -59,7 +59,7 @@ const Profile = () => {
     const updateRightSection = async () => {
         const { ['image']: removedField, ...rest } = editedEmployee;
         try {
-            await axios.put(`https://vercel-effortles-ops.vercel.app/api/profile-data/updateRightSection`, rest, {
+            await axios.put(`https://effortlessops-backend.onrender.com/api/profile-data/updateRightSection`, rest, {
                 headers: { 
                     'emp_id': currentUser,
                     'object_id':editedEmployee._id
@@ -75,7 +75,7 @@ const Profile = () => {
     const updateRoleDetails = async () => {
         const { ['image']: removedField, ...rest } = editedEmployee;
         try {
-            await axios.put(`https://vercel-effortles-ops.vercel.app/api/profile-data/updateRoleDetails`, rest, {
+            await axios.put(`https://effortlessops-backend.onrender.com/api/profile-data/updateRoleDetails`, rest, {
                 headers: { 
                     'emp_id': currentUser,
                     'object_id':editedEmployee._id

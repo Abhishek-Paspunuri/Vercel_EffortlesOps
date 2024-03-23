@@ -10,7 +10,7 @@ const ImgCollection = (props) => {
   const [images, setImages] = useState([]);
   const getImages = async () => {
     try {
-      const response = await fetch("https://vercel-effortles-ops.vercel.app/api/signup/getImage", {
+      const response = await fetch("https://effortlessops-backend.onrender.com/api/signup/getImage", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
