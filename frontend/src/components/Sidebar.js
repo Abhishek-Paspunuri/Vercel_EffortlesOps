@@ -45,7 +45,7 @@ const Sidebar = () => {
 
   const handleLeaveSubmit = () => {
 
-    fetch('https://effortlessops-backend.onrender.com/api/apply-leave/submitLeave', {
+    fetch('https://vercel-effortles-ops.vercel.app/api/apply-leave/submitLeave', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

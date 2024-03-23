@@ -21,7 +21,7 @@ const ChatBox = ({chat,currentUser,setSendMessage,receivedMessage}) => {
         let getUserData = async () => {
           try {
             const response = await fetch(
-              "https://effortlessops-backend.onrender.com/api/profile-data/getUser",{
+              "https://vercel-effortles-ops.vercel.app/api/profile-data/getUser",{
                   method: "GET",
                   headers: {
                       "emp_id": userId,

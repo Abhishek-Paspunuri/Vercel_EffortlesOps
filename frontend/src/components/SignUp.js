@@ -37,7 +37,7 @@ const SignUp = () => {
         formData.append("file", imageData);
         formData.append("mobile", mobile);
     
-        const response = await fetch(`https://effortlessops-backend.onrender.com/api/user/submit-form`, {
+        const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/user/submit-form`, {
             method: 'POST',
             body: formData
         });
@@ -190,7 +190,7 @@ export default SignUp
 //         formData.append("password", password);
 //         formData.append("file", imageData);
     
-//         const response = await fetch(`https://effortlessops-backend.onrender.com/api/user/submit-form`, {
+//         const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/user/submit-form`, {
 //             method: 'POST',
 //             body: formData
 //         });

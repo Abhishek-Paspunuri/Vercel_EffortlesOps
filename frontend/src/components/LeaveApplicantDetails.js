@@ -4,7 +4,7 @@ const LeaveApplicantDetails = (props) => {
     const updateLeaveStatus = async () => {
         console.log(props.leaveId)
         try {
-            const response = await fetch(`https://effortlessops-backend.onrender.com/api/apply-leave/updateLeaveStatus/${props.leaveId}`, {
+            const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/apply-leave/updateLeaveStatus/${props.leaveId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

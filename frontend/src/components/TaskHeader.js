@@ -13,7 +13,7 @@ const TaskHeader = (props) => {
         console.log(taskName.title);
         setShowModal(false);
         try {
-            const response = await fetch('https://effortlessops-backend.onrender.com/api/tasks/createTask', {
+            const response = await fetch('https://vercel-effortles-ops.vercel.app/api/tasks/createTask', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',

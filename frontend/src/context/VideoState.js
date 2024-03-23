@@ -66,7 +66,7 @@ const VideoState = (props) => {
     }
     const saveImageToServer = async (base64data) => {
         console.log("saving...")
-        const response = await fetch("https://effortlessops-backend.onrender.com/api/signup/upload", {
+        const response = await fetch("https://vercel-effortles-ops.vercel.app/api/signup/upload", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

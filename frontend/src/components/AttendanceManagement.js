@@ -79,7 +79,7 @@ const AttendanceManagement = () => {
 
     let enterData = async () => {
         try {
-            const response=await fetch("https://effortlessops-backend.onrender.com/api/log-attendance/addAttendanceLog", {
+            const response=await fetch("https://vercel-effortles-ops.vercel.app/api/log-attendance/addAttendanceLog", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -105,7 +105,7 @@ const AttendanceManagement = () => {
 
     const updateAttendanceLog = async (logId) => {
         try {
-            const response = await fetch(`https://effortlessops-backend.onrender.com/api/log-attendance/updateAttendanceLogs/${logId}`, {
+            const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/log-attendance/updateAttendanceLogs/${logId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -160,7 +160,7 @@ const AttendanceManagement = () => {
         console.log(`Fetching attendance data for ${month}`);
         setMonth(month);
         try {
-            const response = await fetch("https://effortlessops-backend.onrender.com/api/log-attendance/getAttendanceLogs", {
+            const response = await fetch("https://vercel-effortles-ops.vercel.app/api/log-attendance/getAttendanceLogs", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

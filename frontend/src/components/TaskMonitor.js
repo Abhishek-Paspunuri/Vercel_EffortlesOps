@@ -40,7 +40,7 @@ const TaskMonitor = (props) => {
 
   let handleDelete = async ()=>{
     try {
-      const response = await fetch(`https://effortlessops-backend.onrender.com/api/tasks/deleteTask/${props.id.toString()}`, {
+      const response = await fetch(`https://vercel-effortles-ops.vercel.app/api/tasks/deleteTask/${props.id.toString()}`, {
         method: 'DELETE',
         headers: {
           'Content-Type' : 'application/json',
@@ -63,7 +63,7 @@ const TaskMonitor = (props) => {
   const handleModalSubmit = async () => {
     const {role, member, dead_line} = checkpointData;
     try {
-      const response = await fetch('https://effortlessops-backend.onrender.com/api/checkpoints/putCheckpoint', {
+      const response = await fetch('https://vercel-effortles-ops.vercel.app/api/checkpoints/putCheckpoint', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ const TaskMonitor = (props) => {
 
   const fetchCheckpoints = async() =>{
     try {
-      const response = await fetch('https://effortlessops-backend.onrender.com/api/checkpoints/getCheckpoints', {
+      const response = await fetch('https://vercel-effortles-ops.vercel.app/api/checkpoints/getCheckpoints', {
         method: 'GET',
         headers: {
             'Content-Type' : 'application/json',

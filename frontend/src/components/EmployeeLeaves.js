@@ -60,7 +60,7 @@ const EmployeeLeaves = () => {
     let fetchData = async () => {
         try {
             const response = await fetch(
-                "https://effortlessops-backend.onrender.com/api/apply-leave/getSpecificEmployeeLeaveApplications", {
+                "https://vercel-effortles-ops.vercel.app/api/apply-leave/getSpecificEmployeeLeaveApplications", {
                     method: "GET",
                     headers: {
                         "emp_id": localStorage.getItem("emp_id"),

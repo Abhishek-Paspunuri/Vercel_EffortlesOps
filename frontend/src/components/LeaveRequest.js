@@ -12,7 +12,7 @@ function LeaveRequest() {
   let fetchData = async () => {
     try {
       const response = await fetch(
-        "https://effortlessops-backend.onrender.com/api/apply-leave/getLeaveApplications"
+        "https://vercel-effortles-ops.vercel.app/api/apply-leave/getLeaveApplications"
       );
       const data = await response.json();
       setLeaveApplications(data);
