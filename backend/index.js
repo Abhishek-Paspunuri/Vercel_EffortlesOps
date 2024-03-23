@@ -5,7 +5,7 @@ const port = 3001;
 const app = express();
 app.use(cors(
     {
-            origin:["https://vercel-effortles-ops.vercel.app"],
+            origin:["https://vercel-effortles-ops-frontend.vercel.app/"],
             methods:["POST","GET","DELETE","PUT"],
             credentials:true
     }
