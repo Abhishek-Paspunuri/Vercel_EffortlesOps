@@ -40,7 +40,7 @@ const TrackUsers = () => {
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000);
+        }, 4000);
         setThresholdCalc(1);
     }
     let analyseStyle={
