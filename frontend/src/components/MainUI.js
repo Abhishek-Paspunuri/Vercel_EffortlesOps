@@ -24,7 +24,7 @@ const MainButtons= () => {
     }
     let VideoStyle={
         width: "120px",
-        height: "2000px",
+        height: "200px",
         position: "absolute",
         top: "50px",
         right: "235px",
