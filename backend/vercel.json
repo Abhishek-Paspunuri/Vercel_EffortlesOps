@@ -1,5 +1,16 @@
 {
-    "rewrites":[
-        {"source":"/(.*)","destination":"/"}
+    "version":2,
+    "name":"EffortlessOps",
+    "builds":[
+        {
+            "src":"*.js",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"/"
+        }
     ]
 }
