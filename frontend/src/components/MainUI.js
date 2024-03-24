@@ -9,18 +9,25 @@ import NewUser from '../images/NewUser.png';
 import VideoContext from "../context/VideoContext";
 import { useNavigate } from "react-router-dom";
 import Logo from '../images/EO logo.png';
-import LogoText from '../images/EfortlessOps_Text.png';
+import videoSrc from '../images/UIPerson-unscreen.gif';
 
 const MainButtons= () => {
     let {setIsAdmin}=useContext(VideoContext);
     const navigate = useNavigate();
 
     let LogoStyle={
+        width: "120px",
+        height: "2000px",
+        position: "absolute",
+        top: "50px",
+        right: "235px",
+    }
+    let VideoStyle={
         width: "150px",
-        height: "150px",
+        height: "350px",
         position: "relative",
         top: "88px",
-        right: "-80px",
+        right: "-180px",
     }
     let LogoTextStyle={
         fontSize: "120px",
@@ -35,6 +42,7 @@ const MainButtons= () => {
     return (
         <>
         <img style={LogoStyle} src={Logo} alt="logo" />
+        <img style={VideoStyle} src={videoSrc} alt="video" />
         {/* <img style={LogoTextStyle} src={LogoText} alt="logo" /> */}
         <h1 style={LogoTextStyle}>EffortlessOps</h1>
         <div className="container box">
