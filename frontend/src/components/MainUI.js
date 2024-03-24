@@ -16,18 +16,18 @@ const MainButtons= () => {
     const navigate = useNavigate();
 
     let LogoStyle={
+        width: "150px",
+        height: "150px",
+        position: "relative",
+        top: "88px",
+        right: "-80px",
+    }
+    let VideoStyle={
         width: "120px",
         height: "2000px",
         position: "absolute",
         top: "50px",
         right: "235px",
-    }
-    let VideoStyle={
-        width: "150px",
-        height: "350px",
-        position: "relative",
-        top: "88px",
-        right: "-180px",
     }
     let LogoTextStyle={
         fontSize: "120px",
