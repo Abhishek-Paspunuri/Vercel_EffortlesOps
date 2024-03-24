@@ -6,9 +6,6 @@
             "use":"@vercel/node"
         }
     ],
-    "build": {
-        "base": "https://github.com/heroku/heroku-buildpack-apt.git#v54"
-    },
     "routes":[
         {
             "src":"/(.*)",
