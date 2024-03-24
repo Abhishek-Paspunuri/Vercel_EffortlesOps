@@ -93,7 +93,7 @@ const TrackUsers = () => {
                                     {isLoading===true ? 
                                         <SkeletonLoad/> 
                                         :
-                                    <UserTracking imageUrl={data.image} date={"date"} time={data.time} threshold={data.accuracy}/>}
+                                    <UserTracking imageUrl={data.image} date={data.date} time={data.time} threshold={data.accuracy}/>}
                                 </div>
                     })}
                 </div>
