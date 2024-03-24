@@ -2,9 +2,9 @@ import React, { useEffect, useState , useContext } from 'react';
 import UserTracking from './UserTracking';
 import { useLocation } from "react-router-dom";
 import VideoContext from "../context/VideoContext";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import SkeletonLoad from './SkeletonLoad';
+import AdminNavbar from './AdminNavbar';
+import AdminSidebar from './AdminSidebar';
 const TrackUsers = () => {
   const location = useLocation();
   // let emp_id= localStorage.getItem('emp_id');
@@ -65,9 +65,9 @@ const TrackUsers = () => {
 
     return (
     <>
-        <Navbar />
+        <AdminNavbar />
         <div className="d-flex" style={{width:"120%", position:"relative", left:"-65px"}}>
-            <Sidebar />
+            <AdminSidebar />
             <div style={mainStyle}>
                 {images.length!==0?
                 <>
