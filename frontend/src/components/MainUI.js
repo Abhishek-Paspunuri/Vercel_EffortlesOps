@@ -9,7 +9,7 @@ import NewUser from '../images/NewUser.png';
 import VideoContext from "../context/VideoContext";
 import { useNavigate } from "react-router-dom";
 import Logo from '../images/EO logo.png';
-import videoSrc from '../images/UIPerson-unscreen.gif';
+// import videoSrc from '../images/UIPerson-unscreen.gif';
 
 const MainButtons= () => {
     let {setIsAdmin}=useContext(VideoContext);
@@ -22,13 +22,13 @@ const MainButtons= () => {
         top: "88px",
         right: "-80px",
     }
-    let VideoStyle={
-        width: "120px",
-        height: "200px",
-        position: "absolute",
-        top: "50px",
-        right: "235px",
-    }
+    // let VideoStyle={
+    //     width: "120px",
+    //     height: "200px",
+    //     position: "absolute",
+    //     top: "50px",
+    //     right: "235px",
+    // }
     let LogoTextStyle={
         fontSize: "120px",
         position: "relative",
@@ -42,7 +42,7 @@ const MainButtons= () => {
     return (
         <>
         <img style={LogoStyle} src={Logo} alt="logo" />
-        <img style={VideoStyle} src={videoSrc} alt="video" />
+        {/* <img style={VideoStyle} src={videoSrc} alt="video" /> */}
         {/* <img style={LogoTextStyle} src={LogoText} alt="logo" /> */}
         <h1 style={LogoTextStyle}>EffortlessOps</h1>
         <div className="container box">
